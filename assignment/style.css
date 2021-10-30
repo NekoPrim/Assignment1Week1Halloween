@@ -4,6 +4,11 @@
     animation-iteration-count: infinite;
     animation-name: page;
     background-color: #ff8c00;
+    height: auto;
+    margin: 0;
+    overflow: scroll;
+    resize:both;
+    width: auto;
     }
 
     @keyframes page {
@@ -17,9 +22,15 @@
 
 /* Make the header and footer a different color from the background */
     .header {
+      align-items: center;
       background-color:black;
       border:#C0C0C0;
       border-style:dotted;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      flex-shrink: 1;
+      justify-content: center;
     }
 
     .footer {
@@ -31,7 +42,7 @@
     h1 {
       color: red;
       font-family: eater;
-      font-size: 120px;
+      font-size: 12vw;
       text-align: center;
     }
 
@@ -51,30 +62,22 @@
     }
 /* Put a border around your image */
     .ghost {
-      float: left;
-      left: 15%;
-      position:relative;
-      top: -300px;
-      width:10%;
+      width:20%;
     }
 
     .halloween {
       border: 5px solid #C0C0C0;
-      left: 40%;
+      left: 50%;
       margin: 0;
       position: relative;
-      top: 60%;
+      top: 50%;
       -ms-tranform: translateX(-50%);
       transform: translateX(-50%);
       width: 30%;
     }
 
     .pumpkin {
-      float: right;
-      position: relative;
-      right: 15%;
-      top: -250px;
-      width: 10%;
+      width:20%;
     }
 /* Change the font-family of your list */
     ul, li {
