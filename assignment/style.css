@@ -52,10 +52,10 @@
 /* Put a border around your image */
     .ghost {
       float: left;
-      left: 10%;
+      left: 15%;
       position:relative;
       top: -300px;
-      width:13%;
+      width:10%;
     }
 
     .halloween {
