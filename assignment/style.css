@@ -6,8 +6,6 @@
     background-color: #ff8c00;
     height: auto;
     margin: 0;
-    overflow: scroll;
-    resize:both;
     width: auto;
     }
 
@@ -63,7 +61,22 @@
     }
 /* Put a border around your image */
     .ghost {
-      width:20%;
+      animation-direction: alternate;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-name: boo;
+      animation-timing-function: ease-in-out;
+      position: static;
+      width: 20%;
+    }
+
+    @keyframes boo {
+      0% {opacity:0;}
+      45% {opacity:0.33;}
+      55% {opacity:0.49}
+      65% {opacity:0.66;}
+      75% {opacity:1;}
+      100% {opacity:1;}
     }
 
     .halloween {
